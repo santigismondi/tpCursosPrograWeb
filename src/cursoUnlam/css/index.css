@@ -1,0 +1,101 @@
+body{
+    background-color: #ebebeb;
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+/*Header*/
+nav a{
+    font-weight: 600;
+    
+}
+.logoLupa{
+    height: 15px;
+}
+.divHeaderBuscador{
+    position:relative;
+    width: 40%;
+}
+.inputBusqueda{
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    width: 80%;
+}
+.botonBusqueda{
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffffff;
+    border: 0;
+    outline: none;
+    margin:auto;
+}
+.botonIniciarSesion{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    padding-right: 10px;
+    width:120px;
+}
+.botonRegistrarse{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    padding-right: 10px;
+    width:120px;
+}
+.registrarse{
+    color: #ffffff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 10px;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+}
+
+.imagenHeader{
+    height: 50px;
+    margin-right: 10px;
+}
+/* Fin Header */
+
+/*Home*/
+.gridCursos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+        height: 140px;
+    }
+    nav{
+        padding: 10px 0px; 
+    }
+}

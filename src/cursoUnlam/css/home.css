@@ -13,7 +13,7 @@ nav a{
     
 }
 .logoLupa{
-    height: 15px;
+    color: #000000;
 }
 .logoHome{
     height: 15px;
@@ -158,6 +158,7 @@ nav a{
     height: 15px;
     margin-left: 5px;
 }
+
 @media (max-width: 768px){
     .header{
         flex-direction: column;

@@ -9,8 +9,7 @@ a{
 }
 /*Header*/
 nav a{
-    font-weight: 600;
-    
+    font-weight: 600;    
 }
 .logoLupa{
     color: #000000;
@@ -55,6 +54,10 @@ nav a{
     margin:auto;
     padding-right: 10px;
     width:120px;
+    font-weight: 600;
+}
+.logoPerfil{
+    padding-right: 5px;
 }
 .botonCalendario{
     padding: 10px;
@@ -65,7 +68,12 @@ nav a{
     margin:auto;
     padding-right: 10px;
     width:120px;
+    font-weight: 600;
 }
+.logoCalendario{
+    padding-right: 5px;
+}
+
 .botonCarritoHeader{
     padding: 10px;
     border-radius: 5px;

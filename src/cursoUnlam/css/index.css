@@ -38,6 +38,9 @@ nav a{
     outline: none;
     margin:auto;
 }
+.logoLupa{
+    color: #000000;
+}
 .botonIniciarSesion{
     padding: 10px;
     border-radius: 5px;
@@ -126,6 +129,10 @@ nav a{
     padding: 10px;
     margin: 10px;
     color: #000000;
+}
+.logoCarrito{
+    height: 15px;
+    margin-left: 5px;
 }
 .precioCurso{
     display: flex;

@@ -18,9 +18,7 @@ nav a{
     height: 15px;
     padding-right: 5px;
 }
-.logoCarritoHeader{
-    height: 15px;
-}
+
 .divHeaderBuscador{
     position:relative;
     width: 40%;
@@ -77,10 +75,15 @@ nav a{
 .botonCarritoHeader{
     padding: 10px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #00ce60;
     border: 2px solid #000000;
     outline: none;
     margin:auto;
+    font-style: 00ce60;
+}
+.logoCarritoHeader{
+    color: #000000;
+    height: 15px;
 }
 .registrarse{
     color: #ffffff;

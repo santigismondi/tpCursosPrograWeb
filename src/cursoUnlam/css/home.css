@@ -110,13 +110,18 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: space-between;
+    padding: 20px;
 }
 .contenedorSubtitulo{
     display: flex;
-    justify-content: center;
-    margin: 20px;
+    justify-content:flex-start;
+
+}
+.contenedorTituloBienvenida{
+    display: flex;
+    justify-content:flex-start;
+
 }
 .subtituloCurso{
     font-size: 1.2rem;
@@ -124,7 +129,7 @@ nav a{
 }
 .curso{
     width: 400px;
-    margin: 10px;
+    padding: 10px;
     background-color: #ffffff;
     border-radius: 2px;
     border: #000000 1px solid;
@@ -166,7 +171,44 @@ nav a{
     height: 15px;
     margin-left: 5px;
 }
-
+.contendorBienvenida{
+    margin: 30px;
+}
+.parrafoBienvenida{
+    position: absolute;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    padding: 20px;
+    margin-left: -65%;
+    width: 24%;  
+    margin-top: 5%;
+    box-shadow: 0px 0px 5px 0px #000000;
+    border-radius: 2px;
+}
+.contenedorImagenHome{
+    display: flex;
+    justify-content: center;
+}
+.imagenHome{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.contenendorNombreCurso{
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+}
+.contenendorInfoCurso{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+.contenedorCursos{
+    margin: 10px;
+}
 @media (max-width: 768px){
     .header{
         flex-direction: column;

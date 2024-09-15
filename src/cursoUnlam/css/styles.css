@@ -1,0 +1,50 @@
+.contact{
+    width: 80%;
+    margin: auto;
+}
+
+.curso_detalles, .contenido, .profesor_container, .cursos_relacionados{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.curso_detalles{
+    display: flex;
+    justify-content: space-evenly;
+} img{
+    height: 200px;
+}
+
+.contenido_item{
+    display: flex;
+    align-items: center;}
+
+.contenido_titulo{
+    margin: 1rem;
+}
+
+.contenido_container{
+    display: flex;
+    justify-content: space-around;
+}
+.profesor_container{
+    display: flex;
+}
+.profesor_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+.stars{
+    height: 20px;
+    width: 120px;
+}
+.cursos_relacionados{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cursos_relacionados img{
+    height: 150px;
+}

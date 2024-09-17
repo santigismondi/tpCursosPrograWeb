@@ -122,6 +122,9 @@ nav a{
     padding-bottom: 10px;
     padding-top: 10px;
 }
+.barraMenuItemsRegalo{
+    color:#00ce60;
+}
 .itemMenuLink{
     color: #000000;
     font-weight: 400;

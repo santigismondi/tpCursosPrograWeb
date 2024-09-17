@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/giftcard.css">
+    <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
+    <title>Giftcard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="divHeader">
+            <a href="#" class="logoHeader">
+                <img class="imagenHeader" src="../img/unlam-logo.png"/>
+                <h2 class="nombreHeader"> Cursos UNLAM</h2>
+            </a>
+        </div> 
+        <div class="divHeaderBuscador">
+            <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
+            <a class=contenededorBotonBusqueda href="#">
+                <button class="botonBusqueda">
+                    <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+            </a>
+        </div>
+        <nav class="navHeader">
+            <a href="" class="miCarrito">
+                <button class="botonCarritoHeader">                    
+                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                </button>
+            </a>
+            <a href="" class="misCursos">
+                <button class="botonCalendario">                    
+                    <span class="logoCalendario"><i class="fa-solid fa-house"></i></span>
+                    <span>Inicio</span>
+                </button>
+            </a>
+            <a href="" class="miPerfil">
+                <button class="botonMiPerfil">                    
+                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
+                    <span>Mi Perfil</span>
+                </button>
+            </a>
+        </nav>       
+    </header> 
+    <header class="headerMenu">
+        <nav class="navMenu">
+            <ul class="barraMenu">
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
+            </ul>
+        </nav>
+    </header> 
+    <!--  Fin del header -->
+    
+    <main>
+    <div class="Gift-card-container">
+        <section class="card-container">
+            <h1>Personaliza tu Gift Card</h1>
+            <form class="gift-card-form">
+                <label for="monto">Monto:</label>
+                <input type="numero" id="monto" class="monto" nombre="monto" min="1" placeholder="Ingrese el monto" required>
+
+                <label for="cardnombre-input">Nombre de la Tarjeta:</label>
+                <input type="text" id="cardnombre-input" class="card-nombre" nombre="cardnombre" placeholder="Ingrese el nombre" required>
+
+                <button type="submit" class="confirm-button">Confirmar</button>
+
+                <div class="card-preview">
+                    <h2>Detalles de la Gift Card</h2>
+                    <p><strong>Monto:</strong> <span class="display-monto">--</span></p>
+                    <p><strong>Nombre de la Tarjeta:</strong> <span class="display-card-nombre">--</span></p>
+                    <p><strong>Número de Tarjeta:</strong> <span class="display-card-numero">1234567890123</span></p>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+    </main>
+
+</body>
+</html>

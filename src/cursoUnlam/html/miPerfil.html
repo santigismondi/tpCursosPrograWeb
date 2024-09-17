@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="divHeader">
+            <a href="#" class="logoHeader">
+                <img class="imagenHeader" src="../img/unlam-logo.png"/>
+                <h2 class="nombreHeader"> Cursos UNLAM</h2>
+            </a>
+        </div> 
+        <div class="divHeaderBuscador">
+            <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
+            <a class=contenededorBotonBusqueda href="#">
+                <button class="botonBusqueda">
+                    <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+            </a>
+        </div>
+        <nav class="navHeader">
+            <a href="" class="miCarrito">
+                <button class="botonCarritoHeader">                    
+                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                </button>
+            </a>
+            <a href="./calendario.html" class="misCursos">
+                <button class="botonCalendario">                    
+                    <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span>Mis Cursos</span>
+                </button>
+            </a>
+            <a href="./miPerfil.html" class="miPerfil">
+                <button class="botonMiPerfil">                    
+                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
+                    <span>Mi Perfil</span>
+                </button>
+            </a>
+        </nav>       
+    </header> 
+    <header class="headerMenu">
+        <nav class="navMenu">
+            <ul class="barraMenu">
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
+            
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <section class="mi-perfil">
+            <h1>Mi perfil</h1>
+            <p>En esta pagina podes editar los datos de tu perfil</p>
+
+            <div class="input">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Juan">
+
+            </div>
+
+            <div class="input">
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" value="Martinez">
+            </div>
+
+            <div class="input">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" value="juan.martinez">
+            </div>
+
+            <div class="input">
+                <label for="correo">Direccion de correo electronico:</label>
+                <input type="text" id="correo" name="correo" value="juan.martinez@gmail.com">
+            </div>
+
+            <div class="input">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" value="juan.martinez123">
+            </div>
+
+            <div class="input">
+                <label for="nuevaContraseña" >Nueva contraseña:</label>
+                <input type="text"id=nuevaContraseña name="nuevaContraseña">
+            </div>
+
+            <div class="input">
+                <label for="confirmarNuevaContraseña" >Confirmar nueva contraseña:</label>
+                <input type="text"id=confirmarNuevaContraseña name="confirmarNuevaContraseña">
+            </div>
+
+            <div class="guardarCambios">
+                <input type="button" value="Guardar Cambios">
+
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

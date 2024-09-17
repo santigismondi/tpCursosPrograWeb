@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripcion para empresas</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="divHeader">
+            <a href="#" class="logoHeader">
+                <img class="imagenHeader" src="../img/unlam-logo.png"/>
+                <h2 class="nombreHeader"> Cursos UNLAM</h2>
+            </a>
+        </div> 
+        <div class="divHeaderBuscador">
+            <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
+            <a class=contenededorBotonBusqueda href="#">
+                <button class="botonBusqueda">
+                    <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+            </a>
+        </div>
+        <nav class="navHeader">
+            <a href="" class="miCarrito">
+                <button class="botonCarritoHeader">                    
+                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                </button>
+            </a>
+            <a href="./calendario.html" class="misCursos">
+                <button class="botonCalendario">                    
+                    <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span>Mis Cursos</span>
+                </button>
+            </a>
+            <a href="./miPerfil.html" class="miPerfil">
+                <button class="botonMiPerfil">                    
+                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
+                    <span>Mi Perfil</span>
+                </button>
+            </a>
+        </nav>       
+    </header> 
+    <header class="headerMenu">
+        <nav class="navMenu">
+            <ul class="barraMenu">
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
+            
+            </ul>
+        </nav>
+    </header>  <!--Copiar header ya hecho-->
+    <main>
+
+        <section class="formulario">
+            <h1>Titulo curso</h1>
+            <p>Ingresa los datos de los miembros de tu empresa para poder anotarlos en nuestro curso:</p>
+            <div class="fila">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
+                <input type="number" name="dni" id="dni" placeholder="DNI">
+                <input type="button" name="quitar" id="quitar" value="Quitar">
+            </div>
+            <div class="fila">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
+                <input type="number" name="dni" id="dni" placeholder="DNI">
+                <input type="button" name="quitar" id="quitar" value="Quitar">
+            </div>
+            <div class="fila">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
+                <input type="number" name="dni" id="dni" placeholder="DNI ">
+                <input type="button" name="quitar" id="quitar" value="Quitar">
+
+            </div>
+        </section>
+
+        <section class="agregar-persona">
+            <input type="button" id="agregar" name="agregar" value="+ Agregar nuevo">
+        </section>
+
+        <section class="inscribir-empresa">
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" placeholder="0.00">
+
+            <input type="button" value="Inscribirse">
+
+        </section>
+    </main>
+
+
+    <footer></footer>
+</body>
+
+</html>

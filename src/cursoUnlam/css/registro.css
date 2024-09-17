@@ -12,8 +12,13 @@ nav a{
     font-weight: 600;    
 }
 .logoLupa{
-    height: 15px;
+    color: #000000;
 }
+.logoHome{
+    height: 15px;
+    padding-right: 5px;
+}
+
 .divHeaderBuscador{
     position:relative;
     width: 40%;
@@ -38,10 +43,7 @@ nav a{
     outline: none;
     margin:auto;
 }
-.logoLupa{
-    color: #000000;
-}
-.botonIniciarSesion{
+.botonMiPerfil{
     padding: 10px;
     border-radius: 5px;
     background-color: #ffffff;
@@ -50,16 +52,38 @@ nav a{
     margin:auto;
     padding-right: 10px;
     width:120px;
+    font-weight: 600;
 }
-.botonRegistrarse{
+.logoPerfil{
+    padding-right: 5px;
+}
+.botonCalendario{
     padding: 10px;
     border-radius: 5px;
-    background-color: #000000;
+    background-color: #ffffff;
     border: 2px solid #000000;
     outline: none;
     margin:auto;
     padding-right: 10px;
     width:120px;
+    font-weight: 600;
+}
+.logoCalendario{
+    padding-right: 5px;
+}
+
+.botonCarritoHeader{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00ce60;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    font-style: 00ce60;
+}
+.logoCarritoHeader{
+    color: #000000;
+    height: 15px;
 }
 .registrarse{
     color: #ffffff;
@@ -112,108 +136,54 @@ nav a{
 /* Fin Header */
 
 /*Home*/
-.gridCursos{
+.contenedorSubTituloRegistro{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.contenedorRegistro{
     justify-content: space-between;
     padding: 20px;
 }
-.contenedorSubtitulo{
+.contenedorForm{
     display: flex;
-    justify-content:flex-start;
-
+    justify-content: space-evenly;
+    height: 100%;
 }
-.contenedorTituloBienvenida{
+.contenedorCargaDatos{
+    font-weight: 600;    
+    height: 100%;   
+}
+.contenedorCargaDatos{   
     display: flex;
-    justify-content:flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
 
-}
-.subtituloCurso{
-    font-size: 1.2rem;
-    margin-left: 20px;
-}
-.curso{
-    width: 400px;
+.contenedorCargaDatos input{   
     padding: 10px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    border: #000000 1px solid;
-    justify-content: center;
-}
-.imagenCurso{
+    margin: 10px 0px;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 2px;
-}
-.nombreCurso{
-    display: flex;
-    font-size: 1rem;
-    padding-left: 5px;
-}
-.botonCarrito{
-    display: flex;
     border-radius: 5px;
-    background-color: #00ce60;
-    outline: none;    
-    font-size: 1rem;
+    border: 1px solid #000000;
+    outline: none;
+}
+.contenedorCargaDatos textarea{   
     padding: 10px;
-    margin: 5px;
-    color: #000000;
-}
-.precioCurso{
-    display: flex;
-    font-size: 1rem;
-    padding-left: 5px;
-    font-weight: 400;
-}
-.contenededorBotonCarrito{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-.logoCarrito{
-    height: 15px;
-    margin-left: 5px;
-}
-.contendorBienvenida{
-    margin: 30px;
-}
-.parrafoBienvenida{
-    position: absolute;
-    background-color: #ffffff;
-    font-size: 1.2rem;
-    padding: 20px;
-    margin-left: -65%;
-    width: 24%;  
-    margin-top: 5%;
-    box-shadow: 0px 0px 5px 0px #000000;
-    border-radius: 2px;
-}
-.contenedorImagenHome{
-    display: flex;
-    justify-content: center;
-}
-.imagenHome{
+    margin: 10px 0px;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 2px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    outline: none;
 }
-.contenendorNombreCurso{
-    justify-content: center;
-    display: flex;
-    margin: 10px;
+.contenedorDatosEmpresa{
+    height: 100%;
 }
-.contenendorInfoCurso{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    justify-content: space-between;
-}
-.contenedorCursos{
-    margin: 10px;
+.mapaUnlam{
+    width: 80%;
+    height: 80%;
+    border: 0;
 }
 @media (max-width: 768px){
     .header{

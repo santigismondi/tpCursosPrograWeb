@@ -23,31 +23,60 @@
         </div>
         <nav class="navHeader">
             <button class="botonIniciarSesion"><a href="" class="iniciarSesion">Iniciar Sesion</a></button>
-            <button class="botonRegistrarse"><a href="" class="registrarse">Registrarse</a></button>
+            <button class="botonRegistrarse"><a href="./cursoUnlam/html/registro.html" class="registrarse">Registrarse</a></button>
         </nav>       
     </header> 
-    
+    <header class="headerMenu">
+        <nav class="navMenu">
+            <ul class="barraMenu">
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
+            </ul>
+        </nav>
+    </header> 
     <!--  Cuerpo de la pagina -->
+<div class="contendorBienvenida">
+    <div class="contenedorImagenHome">
+        <p class="parrafoBienvenida">
+            Inicia sesion para acceder a todos cursos que tenemos para vos!
+        </p>
+        <img class="imagenHome" src="./cursoUnlam/img/persona-haciendo-apuntes.jpg">
+    </div>   
+</div>
 
+<div class="contenedorCursos">
     <div class="contenedorSubtitulo">
         <h2 class="subtituloCurso">Aprende a programar!</h2>
-    </div>    
-
-    <section class="gridCursos">
+    </div> 
+    <div class="gridCursos">
         <div class="curso">
-            <img class="imagenCurso" src="../src/cursoUnlam/img/miniaturas/css.jpg">
-            <h3 class="nombreCurso">Curso de CSS - Completo desde cero</h3>
-            <h4 class="precioCurso">$25.000</h4>
-            <h5 class="duracionCurso">Duracion: 2hs</h5>
-            <a class=contenededorBotonCarrito href="#">                
-                <button class="botonCarrito">  
-                    Añadir al carrito              
-                    <span class="logoCarrito"><i class="fa-solid fa-basket-shopping"></i></span>
-                </button>
-            </a>
+            <div>
+                <img class="imagenCurso" src="./cursoUnlam/img/miniaturas/css.jpg">
+            </div>
+            <div class="contenendorNombreCurso">
+                <h3 class="nombreCurso">Curso de CSS - Completo desde cero</h3>
+            </div>
+            <div class="contenendorInfoCurso">
+                <div>
+                    <h4 class="precioCurso">$25.000</h4>
+                </div>
+                <div>
+                    <h5 class="duracionCurso">Duracion: 2hs</h5>
+                </div>
+            </div>
+            <div>
+                <a class=contenededorBotonCarrito href="#">                
+                    <button class="botonCarrito">  
+                        Añadir al carrito              
+                        <span class="logoCarrito"><i class="fa-solid fa-basket-shopping"></i></span>
+                    </button>
+                </a>
+            </div>
         </div>
         <div class="curso">
-            <img class="imagenCurso" src="../src/cursoUnlam/img/miniaturas/html.jpg">
+            <img class="imagenCurso" src="./cursoUnlam/img/miniaturas/html.jpg">
             <h3 class="nombreCurso">Curso de HTML - Completo desde cero</h3>
             <h4 class="precioCurso">$20.000</h4>
             <a class=contenededorBotonCarrito href="#">                
@@ -58,7 +87,7 @@
             </a>
         </div>
         <div class="curso">
-            <img class="imagenCurso" src="../src/cursoUnlam/img/miniaturas/htmlYcss.jpg">
+            <img class="imagenCurso" src="./cursoUnlam/img/miniaturas/htmlYcss.jpg">
             <h3 class="nombreCurso">Curso de HTML y CSS - Completo desde cero</h3>
             <h4 class="precioCurso">$40.000</h4>
             <a class=contenededorBotonCarrito href="#">                
@@ -69,7 +98,7 @@
             </a>
         </div>
         <div class="curso">
-            <img class="imagenCurso" src="../src/cursoUnlam/img/miniaturas/python.jpg">
+            <img class="imagenCurso" src="./cursoUnlam/img/miniaturas/python.jpg">
             <h3 class="nombreCurso">Curso de Python - Completo desde cero</h3>
             <h4 class="precioCurso">$30.000</h4>
             <a class=contenededorBotonCarrito href="#">                
@@ -79,5 +108,7 @@
                 </button>
             </a>
         </div>
-    </section>
+    </div>
+</div>
+</section>
 </body>

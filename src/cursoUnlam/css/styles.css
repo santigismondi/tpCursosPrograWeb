@@ -3,7 +3,7 @@
     margin: auto;
 }
 
-.curso_detalles, .contenido, .profesor_container, .cursos_relacionados{
+.curso_detalles, .contenido, .profesor_container{
     width: 80%;
     margin: auto;
     margin-top: 2%;
@@ -11,40 +11,82 @@
 
 .curso_detalles{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 1.2rem;
+    height: 300px;
+    align-items: center;
+    margin-bottom: 4%;
 } img{
-    height: 200px;
+    height: 300px;
 }
+
 
 .contenido_item{
     display: flex;
     align-items: center;}
 
 .contenido_titulo{
-    margin: 1rem;
+    margin: 1.4rem 1rem;
+    font-size: 1.4rem;
+}
+.titulo_curso{
+    font-size: 2.4rem;
+    margin: 0;
+}
+.info_curso{
+    margin: 0.6rem 0;    
+}
+.inscribirse{
+    font-size: 1.4rem;
+    background-color: green;
+    color:white;
+    padding: 6px 14px;
+    border-radius: 6px;
 }
 
 .contenido_container{
     display: flex;
     justify-content: space-around;
+    margin-bottom: 4%;
 }
+
+.unidades{
+    font-size: 1.4rem;
+}
+
+
 .profesor_container{
     display: flex;
+    align-items: center;
+}
+
+.profesor_img{
+    height: 200px;
 }
 .profesor_info{
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 2rem;
-}
+p{font-size: 1.4rem;}}
 .stars{
     height: 20px;
     width: 120px;
 }
-.cursos_relacionados{
+.relacionados_container{
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
-.cursos_relacionados img{
+.relacionados_container img{
     height: 150px;
+}
+.cursos_relacionados{
+    display: flex;
+    justify-content: space-around;
 }

@@ -146,6 +146,9 @@ nav a{
     justify-content: space-between;
     padding: 20px;
 }
+.gridCursos a{
+    color: #000000;
+}
 .contenedorSubtitulo{
     display: flex;
     justify-content:flex-start;
@@ -242,6 +245,7 @@ nav a{
 .contenedorCursos{
     margin: 10px;
 }
+
 @media (max-width: 768px){
     .header{
         flex-direction: column;
@@ -249,5 +253,8 @@ nav a{
     }
     nav{
         padding: 10px 0px; 
+    }
+    .gridCursos{
+        padding: 10px;
     }
 }

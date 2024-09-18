@@ -1,0 +1,228 @@
+body{
+    background-color: #ebebeb;
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+/*Header*/
+nav a{
+    font-weight: 600;    
+}
+.logoLupa{
+    color: #000000;
+}
+.logoHome{
+    height: 15px;
+    padding-right: 5px;
+}
+
+.divHeaderBuscador{
+    position:relative;
+    width: 40%;
+}
+.inputBusqueda{
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+    width: 80%;
+}
+.botonBusqueda{
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: #ffffff;
+    border: 0;
+    outline: none;
+    margin:auto;
+}
+.botonMiPerfil{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    padding-right: 10px;
+    width:120px;
+    font-weight: 600;
+}
+.logoPerfil{
+    padding-right: 5px;
+}
+.botonCalendario{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    padding-right: 10px;
+    width:120px;
+    font-weight: 600;
+}
+.logoCalendario{
+    padding-right: 5px;
+}
+
+.botonCarritoHeader{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00ce60;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    font-style: 00ce60;
+}
+.logoCarritoHeader{
+    color: #000000;
+    height: 15px;
+}
+.registrarse{
+    color: #ffffff;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 10px;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+}
+
+.imagenHeader{
+    height: 50px;
+    margin-right: 10px;
+}
+
+/*Menu Header*/
+.headerMenu{
+    border-top-color: #000000;
+    border-top-width: 1px;
+    border-top-style: solid;
+    background-color: #ffffff;
+}
+.headerMenu .navMenu .barraMenu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin:0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.itemMenuLink{
+    color: #000000;
+    font-weight: 400;
+    transition-property: color, font-size;
+    transition-duration: 0.2s;
+
+}
+.itemMenuLink:hover{
+    font-size: 1.01rem;
+    color: #00ce60;
+}
+/* Fin Header */
+
+main {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gift-card-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.monto,
+.card-nombre {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.monto {
+    font-family: Arial, sans-serif;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+.confirm-button {
+    padding: 10px;
+    background-color: #00ce60;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.confirm-button:hover {
+    background-color: #00ec6e;
+    color: #333;
+}
+
+.card-preview {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.card-preview h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.card-preview p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.display-monto,
+.display-card-nombre,
+.display-card-numero {
+    font-weight: bold;
+}

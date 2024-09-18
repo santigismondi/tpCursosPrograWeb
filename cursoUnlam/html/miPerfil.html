@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscripcion para empresas</title>
+    <title>Mi perfil</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class="divHeader">
-            <a href="#" class="logoHeader">
+            <a href="../html/home.html" class="logoHeader">
                 <img class="imagenHeader" src="../img/unlam-logo.png"/>
                 <h2 class="nombreHeader"> Cursos UNLAM</h2>
             </a>
@@ -52,51 +52,59 @@
                 <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
                 <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
                 <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
+                <a href="../html/giftcard.html" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
             
             </ul>
         </nav>
-    </header>  <!--Copiar header ya hecho-->
+    </header> 
     <main>
+        <section class="mi-perfil">
+            <h1>Mi perfil</h1>
+            <p>En esta pagina podes editar los datos de tu perfil</p>
 
-        <section class="formulario">
-            <h1>Titulo curso</h1>
-            <p>Ingresa los datos de los miembros de tu empresa para poder anotarlos en nuestro curso:</p>
-            <div class="fila">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
-                <input type="number" name="dni" id="dni" placeholder="DNI">
-                <input type="button" name="quitar" id="quitar" value="Quitar">
-            </div>
-            <div class="fila">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
-                <input type="number" name="dni" id="dni" placeholder="DNI">
-                <input type="button" name="quitar" id="quitar" value="Quitar">
-            </div>
-            <div class="fila">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
-                <input type="number" name="dni" id="dni" placeholder="DNI ">
-                <input type="button" name="quitar" id="quitar" value="Quitar">
+            <div class="input">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Juan">
 
             </div>
-        </section>
 
-        <section class="agregar-persona">
-            <input type="button" id="agregar" name="agregar" value="+ Agregar nuevo">
-        </section>
+            <div class="input">
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="apellido" value="Martinez">
+            </div>
 
-        <section class="inscribir-empresa">
-            <label for="precio">Precio:</label>
-            <input type="number" id="precio" name="precio" placeholder="0.00">
+            <div class="input">
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="usuario" value="juan.martinez">
+            </div>
 
-            <input type="button" value="Inscribirse">
+            <div class="input">
+                <label for="correo">Direccion de correo electronico:</label>
+                <input type="text" id="correo" name="correo" value="juan.martinez@gmail.com">
+            </div>
+
+            <div class="input">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" value="juan.martinez123">
+            </div>
+
+            <div class="input">
+                <label for="nuevaContraseña" >Nueva contraseña:</label>
+                <input type="text"id=nuevaContraseña name="nuevaContraseña">
+            </div>
+
+            <div class="input">
+                <label for="confirmarNuevaContraseña" >Confirmar nueva contraseña:</label>
+                <input type="text"id=confirmarNuevaContraseña name="confirmarNuevaContraseña">
+            </div>
+
+            <div class="guardarCambios">
+                <input type="button" value="Guardar Cambios">
+
+            </div>
 
         </section>
     </main>
-
-
     <footer></footer>
 </body>
 

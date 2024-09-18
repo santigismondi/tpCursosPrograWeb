@@ -138,7 +138,7 @@ nav a{
 /*Home*/
 .contenedorSubTituloRegistro{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 20px;
 }
 .contenedorRegistro{
@@ -147,7 +147,7 @@ nav a{
 }
 .contenedorForm{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
 }
 .contenedorCargaDatos{
@@ -157,7 +157,7 @@ nav a{
 .contenedorCargaDatos{   
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
 }
 
@@ -177,6 +177,22 @@ nav a{
     border: 1px solid #000000;
     outline: none;
 }
+.contenedorBotonRegistro{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.botonRegistro{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00ce60;
+    border: 0;
+    outline: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
 .contenedorDatosEmpresa{
     height: 100%;
 }
@@ -185,6 +201,7 @@ nav a{
     height: 80%;
     border: 0;
 }
+
 @media (max-width: 768px){
     .header{
         flex-direction: column;

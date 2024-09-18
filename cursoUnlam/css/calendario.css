@@ -122,9 +122,6 @@ nav a{
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.barraMenuItemsRegalo{
-    color:#00ce60;
-}
 .itemMenuLink{
     color: #000000;
     font-weight: 400;
@@ -137,54 +134,121 @@ nav a{
     color: #00ce60;
 }
 /* Fin Header */
-.formulario {
-    width: 50%;
-    margin: 50px;
-    padding: 50px;
-    display: flex;    
-    flex-direction: column;
-    justify-content: left;
+
+
+/* Calendario  */
+
+h1{
+    text-align: center;
+    color: #000000;
 }
 
-.fila {
-    padding-bottom: 15px;
+main{
+    padding-left: 2rem;
+    background-color: #f5f7fa; 
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: #51565d;
+}
+
+.calendario-container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgba(182, 182, 182, 0.5); 
+    border-radius: 10px;
+    margin: auto;
+}
+
+.calendario-header {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: #147424;
+    color: #ffffff;
+    border-radius: 10px 10px 0 0;
+}
+
+.mes {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(120px, 1fr));
+    grid-template-rows: repeat(6, 100px); 
+    width: 100%;
+}
+
+.dia {
+    text-align: right;
+    padding: 14px 20px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    font-size: 12px;
+    color: gray;
+}
+
+.dia-nombre {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15%;
+    line-height: 50px;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray; 
+    background-color: #147424;
+}
+
+.dia-desabilitado {
+    background-color: #999ca0;
+}
+
+.cursos {
     display: flex;
-    gap: 15px;
-    
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    margin: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
-.agregar-persona {
-    
-    width: 50%;
-    margin:  50px;
-    padding-left: 50px;
-    display: flex;
-    justify-content:left;
-    
+.python {
+    background-color: #4a90e2; 
 }
 
-.inscribir-empresa{
-    width: 50%;
-    margin: 50px;
-    padding-left: 50px;
-    display: flex;
-    justify-content: left;
+.html {
+    background-color: #790983; 
 }
 
-/*Estilo para Mi Perfil*/
-
-.mi-perfil{
-    width: 50%;
-    margin: 50px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+.css {
+    background-color: #c02f03; 
 }
 
-.input{
-    padding: 10px;
+.javascript {
+    background-color: #f4b400; 
 }
 
-.guardarCambios{
-    padding: 15px;
+
+.cursos {
+    grid-column: span 1; 
+}
+
+.dia-python {
+    background-color: #4a90e2;
+    color: white;
+}
+.dia-javascript{
+    background-color: #f4b400;
+    color: white;
+}
+
+.dia-css {
+    background-color: #c02f03;
+    color: white;
+}
+
+.dia-html {
+    background-color: #790983;
+    color: white;
 }

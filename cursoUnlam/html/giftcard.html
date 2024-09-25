@@ -4,57 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/giftcard.css">
-    <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
+
     <title>Giftcard</title>
 </head>
 <body>
-    <header class="header">
-        <div class="divHeader">
-            <a href="../html/home.html" class="logoHeader">
-                <img class="imagenHeader" src="../img/unlam-logo.png"/>
-                <h2 class="nombreHeader"> Cursos UNLAM</h2>
-            </a>
-        </div> 
-        <div class="divHeaderBuscador">
-            <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
-            <a class=contenededorBotonBusqueda href="#">
-                <button class="botonBusqueda">
-                    <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
-                </button>
-            </a>
-        </div>
-        <nav class="navHeader">
-            <a href="" class="miCarrito">
-                <button class="botonCarritoHeader">                    
-                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
-                </button>
-            </a>
-            <a href="./calendario.html" class="misCursos">
-                <button class="botonCalendario">                    
-                    <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
-                    <span>Mis Cursos</span>
-                </button>
-            </a>
-            <a href="./miPerfil.html" class="miPerfil">
-                <button class="botonMiPerfil">                    
-                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
-                    <span>Mi Perfil</span>
-                </button>
-            </a>
-        </nav>       
-    </header> 
-    <header class="headerMenu">
-        <nav class="navMenu">
-            <ul class="barraMenu">
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
-                <a href="../html/giftcard.html" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
-            
-            </ul>
-        </nav>
-    </header> 
+        <header class="header">
+            <div class="divHeader">
+                <a href="#" class="logoHeader">
+                    <img class="imagenHeader" src="../img/unlam-logo.png"/>
+                    <h2 class="nombreHeader"> Cursos UNLAM</h2>
+                </a>
+            </div> 
+            <div class="divHeaderBuscador">
+                <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
+                <a class=contenededorBotonBusqueda href="#">
+                    <button class="botonBusqueda">
+                        <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </button>
+                </a>
+            </div>
+            <nav class="navHeader">
+                <a href="" class="miCarrito">
+                    <button class="botonCarritoHeader">                    
+                        <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                    </button>
+                </a>
+                <a href="../../index.html" class="misCursos">
+                    <button class="botonCalendario">                    
+                        <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
+                        <span>Inicio</span>
+                    </button>
+                </a>
+                <a href="" class="miPerfil">
+                    <button class="botonMiPerfil">                    
+                        <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
+                        <span>Mi Perfil</span>
+                    </button>
+                </a>
+            </nav>       
+        </header> 
     <!--  Fin del header -->
     
     <main>
@@ -68,6 +56,44 @@
                 <label for="cardnombre-input">Nombre de la Tarjeta:</label>
                 <input type="text" id="cardnombre-input" class="card-nombre" nombre="cardnombre" placeholder="Ingrese el nombre" required>
 
+                <section class="color-options">
+                    <h2>Color de Tipografía</h2>
+                    <label>
+                        <input type="radio" name="text-color" value="red" class="text-color"> Rojo
+                    </label>
+                    <label>
+                        <input type="radio" name="text-color" value="blue" class="text-color"> Azul
+                    </label>
+                    <label>
+                        <input type="radio" name="text-color" value="green" class="text-color"> Verde
+                    </label>
+                    <label>
+                        <input type="radio" name="text-color" value="white" class="text-color"> Blanco
+                    </label>
+                    <label>
+                        <input type="radio" name="text-color" value="black" class="text-color"> Negro
+                    </label>
+
+                </section>
+                
+                <section class="background-options">
+                    <h2>Elegir Fondo de la Gift Card</h2>
+                    <div class="background-preview">
+                        <label>
+                            <input type="radio" name="background" value="bg1" class="background-image"> 
+                            <img src="../img/Fondo1.jpg" alt="Fondo 1" class="preview-image">
+                        </label>
+                        <label>
+                            <input type="radio" name="background" value="bg2" class="background-image"> 
+                            <img src="../img/Fondo2.jpg" alt="Fondo 2" class="preview-image">
+                        </label>
+                        <label>
+                            <input type="radio" name="background" value="bg3" class="background-image"> 
+                            <img src="../img/Fondo3.jpg" alt="Fondo 3" class="preview-image">
+                        </label>
+                    </div>
+                </section>
+
                 <button type="submit" class="confirm-button">Confirmar</button>
 
                 <div class="card-preview">
@@ -78,9 +104,41 @@
                 </div>
             </form>
         </section>
+        
     </div>
     
     </main>
+
+    <footer class="custom-footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="footer-title">Integrantes del grupo</h3>
+                <ul class="footer-list">
+                    <li>Gerez Nicolas</li>
+                    <li>Agustin</li>
+                    <li>Gonzalo</li>
+                    <li>Santiago</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Secciones</h3>
+                <ul class="footer-list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Redes Sociales</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="../img/facebook.png" alt="Facebook" class="social-image"></a>
+                    <a href="#" class="social-icon"><img src="../img/twitter.png" alt="twitter" class="social-image"></a>
+                    <a href="#" class="social-icon"><img src="../img/Instagram.png" alt="Instagram" class="social-image"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

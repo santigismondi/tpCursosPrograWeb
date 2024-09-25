@@ -218,6 +218,7 @@ input[type="text" i], [type="number" i] {
 }
 
 .footer-content {
+    background-color: #074118;
     display: flex;
     justify-content: space-around;
 }
@@ -228,6 +229,7 @@ input[type="text" i], [type="number" i] {
 }
 
 .footer-title {
+    color: white;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -238,6 +240,7 @@ input[type="text" i], [type="number" i] {
 }
 
 .footer-list li {
+    color: white;
     margin: 5px 0;
 }
 

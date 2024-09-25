@@ -105,6 +105,7 @@ p{font-size: 1.4rem;}}
 }
 
 .footer-content {
+    background-color: #074118;
     display: flex;
     justify-content: space-around;
 }
@@ -115,6 +116,7 @@ p{font-size: 1.4rem;}}
 }
 
 .footer-title {
+    color: white;
     margin-bottom: 10px;
     font-size: 18px;
 }
@@ -125,6 +127,7 @@ p{font-size: 1.4rem;}}
 }
 
 .footer-list li {
+    color: white;
     margin: 5px 0;
 }
 

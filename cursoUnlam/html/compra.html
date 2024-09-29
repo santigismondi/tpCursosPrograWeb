@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
-    <link rel="stylesheet" href="../css/carrito.css">
+    <title>Finaliza tu compra</title>
+    <link rel="stylesheet" href="../css/compra.css">
     <link rel="stylesheet" href="../css/headerYfooter.css">
 </head>
 <body>
@@ -56,48 +56,29 @@
         </nav>
     </header> 
 <!--  Fin del header -->
-
     <main>
-    <div class="container">
-        <h1 class="title">Carrito de Compras</h1>
-        <table class="cart-table">
-            <thead>
-                <tr>
-                    <th class="table-header">Producto</th>
-                    <th class="table-header">Cantidad</th>
-                    <th class="table-header">Precio</th>
-                    <th class="table-header">Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="table-row">
-                    <td class="table-cell">Curso HTML</td>
-                    <td class="table-cell">1</td>
-                    <td class="table-cell">$1000.00</td>
-                    <td class="table-cell">$1000.00</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-cell">Curso CSS</td>
-                    <td class="table-cell">2</td>
-                    <td class="table-cell">$1500.00</td>
-                    <td class="table-cell">$3000.00</td>
-                </tr>
-                <tr class="table-row">
-                    <td class="table-cell">Giftcard</td>
-                    <td class="table-cell">1</td>
-                    <td class="table-cell">$2000.00</td>
-                    <td class="table-cell">$2000.00</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr class="total-row">
-                    <td colspan="3" class="total-label">Total</td>
-                    <td class="total-amount">$6000.00</td>
-                </tr>
-            </tfoot>
-        </table>
-        <a href="./compra.html"><button class="checkout-button">Finalizar Compra</button></a>
-    </div>
+        <div class="payment-container">
+            <h1 class="payment-title">Datos de la Tarjeta</h1>
+            <div class="total-amount">
+                <p class="total-label">Total a Pagar:</p>
+                <p class="total-value">$6000.00</p>
+            </div>
+            <form class="payment-form">
+                <label class="form-label" for="card-name">Nombre en la Tarjeta</label>
+                <input class="form-input" type="text" id="card-name" placeholder="Nombre completo" required>
+    
+                <label class="form-label" for="card-number">Número de Tarjeta</label>
+                <input class="form-input" type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+    
+                <label class="form-label" for="expiry-date">Fecha de Expiración</label>
+                <input class="form-input" type="text" id="expiry-date" placeholder="MM/AA" required>
+    
+                <label class="form-label" for="cvv">CVV</label>
+                <input class="form-input" type="text" id="cvv" placeholder="XXX" required>
+    
+                <button class="submit-button" type="submit">Pagar</button>
+            </form>
+        </div>
 </main>
 
 <footer class="custom-footer"></footer>

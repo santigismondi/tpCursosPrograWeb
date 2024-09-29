@@ -15,8 +15,8 @@ main {
     padding: 20px;
 }
 
-.container {
-    max-width: 800px;
+.payment-container {
+    max-width: 400px;
     margin: auto;
     background: white;
     padding: 20px;
@@ -24,40 +24,39 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.title {
+.payment-title {
     text-align: center;
 }
 
-.cart-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-.table-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-}
-
-.table-row {
-    border: 1px solid #ddd;
-}
-
-.table-cell {
-    padding: 10px;
+.total-amount {
     text-align: center;
-}
-
-.total-row {
-    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .total-label {
-    text-align: right;
+    font-weight: bold;
 }
 
-.checkout-button {
+.total-value {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -69,6 +68,6 @@ main {
     font-size: 16px;
 }
 
-.checkout-button:hover {
+.submit-button:hover {
     background-color: #45a049;
 }

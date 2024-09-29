@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../css/headerYfooter.css">
+</head>
+<body>
+    <header class="header">
+        <div class="divHeader">
+            <a href="../html/home.html" class="logoHeader">
+                <img class="imagenHeader" src="../img/unlam-logo.png"/>
+                <h2 class="nombreHeader"> Cursos UNLAM</h2>
+            </a>
+        </div> 
+        <div class="divHeaderBuscador">
+            <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
+            <a class=contenededorBotonBusqueda href="#">
+                <button class="botonBusqueda">
+                    <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+            </a>
+        </div>
+        <nav class="navHeader">
+            <a href="" class="miCarrito">
+                <button class="botonCarritoHeader">                    
+                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                </button>
+            </a>
+            <a href="./calendario.html" class="misCursos">
+                <button class="botonCalendario">                    
+                    <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span>Mis Cursos</span>
+                </button>
+            </a>
+            <a href="./miPerfil.html" class="miPerfil">
+                <button class="botonMiPerfil">                    
+                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
+                    <span>Mi Perfil</span>
+                </button>
+            </a>
+        </nav>       
+    </header> 
+    <header class="headerMenu">
+        <nav class="navMenu">
+            <ul class="barraMenu">
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
+                <a href="../html/giftcard.html" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
+            
+            </ul>
+        </nav>
+    </header> 
+<!--  Fin del header -->
+
+    <main>
+    <div class="container">
+        <h1 class="title">Carrito de Compras</h1>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th class="table-header">Producto</th>
+                    <th class="table-header">Cantidad</th>
+                    <th class="table-header">Precio</th>
+                    <th class="table-header">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-row">
+                    <td class="table-cell">Curso HTML</td>
+                    <td class="table-cell">1</td>
+                    <td class="table-cell">$10.00</td>
+                    <td class="table-cell">$10.00</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">Curso CSS</td>
+                    <td class="table-cell">2</td>
+                    <td class="table-cell">$15.00</td>
+                    <td class="table-cell">$30.00</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="table-cell">Curso SQL</td>
+                    <td class="table-cell">1</td>
+                    <td class="table-cell">$20.00</td>
+                    <td class="table-cell">$20.00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="3" class="total-label">Total</td>
+                    <td class="total-amount">$60.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button class="checkout-button">Finalizar Compra</button>
+    </div>
+</main>
+
+<footer class="custom-footer"></footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3 class="footer-title">Integrantes del grupo</h3>
+            <ul class="footer-list">
+                <li>Gerez Nicolas</li>
+                <li>Agustin</li>
+                <li>Gonzalo</li>
+                <li>Santiago Gismondi</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Secciones</h3>
+            <ul class="footer-list">
+                <li><a href="../html/home.html" class="footer-object">Inicio</a></li>
+                <li><a href="../html/home.html" class="footer-object">Servicios</a></li>
+                <li><a href="../html/home.html" class="footer-object">Sobre Nosotros</a></li>
+                <li><a href="../html/home.html" class="footer-object">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Redes Sociales</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/home" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

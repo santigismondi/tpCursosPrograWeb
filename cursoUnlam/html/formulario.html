@@ -62,37 +62,37 @@
         <section class="formulario">
             <h1>Titulo curso</h1>
             <p>Ingresa los datos de los miembros de tu empresa para poder anotarlos en nuestro curso:</p>
-            <div class="fila">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
-                <input type="number" name="dni" id="dni" placeholder="DNI">
-                <input type="button" name="quitar" id="quitar" class="botonFormulario" value="Quitar">
-            </div>
-            <div class="fila">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
-                <input type="number" name="dni" id="dni" placeholder="DNI">
-                <input type="button" name="quitar" id="quitar" class="botonFormulario" value="Quitar">
-            </div>
-            <div class="fila">
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre ">
-                <input type="text" name="apellido" id="apellido" placeholder="Apellido ">
-                <input type="number" name="dni" id="dni" placeholder="DNI ">
-                <input type="button" name="quitar" id="quitar" class="botonFormulario" value="Quitar">
+            <form action="" method="post">
+                <div class="fila">
+                    <input type="text" name="nombre_1" id="nombre_1" placeholder="Nombre " required>
+                    <input type="text" name="apellido_1" id="apellido_1" placeholder="Apellido "required>
+                    <input type="number" name="dni_1" id="dni_1" placeholder="DNI"required>
+                    <input type="button" name="quitar_1" id="quitar_1" value="Quitar">
+                </div>
+                <div class="fila">
+                    <input type="text" name="nombre_2" id="nombre_2" placeholder="Nombre "required>
+                    <input type="text" name="apellido_2" id="apellido_2" placeholder="Apellido "required>
+                    <input type="number" name="dni_2" id="dni_2" placeholder="DNI"required>
+                    <input type="button" name="quitar_2" id="quitar_2" value="Quitar">
+                </div>
+                <div class="fila">
+                    <input type="text" name="nombre_3" id="nombre_3" placeholder="Nombre "required>
+                    <input type="text" name="apellido_3" id="apellido_3" placeholder="Apellido "required>
+                    <input type="number" name="dni_3" id="dni_3" placeholder="DNI "required>
+                    <input type="button" name="quitar_3" id="quitar_3" value="Quitar">
+                </div>
+                <div class="agregar-persona">
+                    <input type="button" id="agregar" name="agregar" value="+ Agregar nuevo">
+                </div>
 
-            </div>
+                <div class="inscribir-empresa">
+                    <label for="precio">Precio:</label>
+                    <span>$ 0.00</span>
+                    <input type="submit" value="Inscribirse">
+
+                </div>
+            </form>
         </section>
-
-        <section class="agregar-persona">
-            <input type="button" id="agregar" name="agregar" class="botonFormulario" value="+ Agregar nuevo">
-        </section>
-
-        <div class="inscribir-empresa">
-            <span class="contenedorPrecio">Precio:</span>
-            <input type="number" id="precio" name="precio" placeholder="0.00">
-            <input type="button" class="botonFormulario" value="Inscribirse">
-
-        </div>
     </main>
 
 

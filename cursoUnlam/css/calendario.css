@@ -14,70 +14,54 @@ h1{
     color: #000000;
 }
 
-main{
-    padding-left: 2rem;
-    background-color: #f5f7fa; 
-    padding: 40px 0;
+main {
     font-family: Arial, sans-serif;
-    color: #51565d;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f4f4f4;
 }
 
-.calendario-container {
-    width: 100%;
-    max-width: 1200px;
-    background-color: white;
-    box-shadow: 0 2px 20px rgba(182, 182, 182, 0.5); 
-    border-radius: 10px;
-    margin: auto;
-}
-
-.calendario-header {
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    background-color: #147424;
-    color: #ffffff;
-    border-radius: 10px 10px 0 0;
+.calendario {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #016601;
+    border-radius: 8px;
+    background-color: #016601;
+    overflow: hidden;
 }
 
 .mes {
-    display: grid;
-    grid-template-columns: repeat(7, minmax(120px, 1fr));
-    grid-template-rows: repeat(6, 100px); 
-    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #016601;
+}
+
+.dias {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .dia {
-    text-align: right;
-    padding: 14px 20px;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
-    font-size: 12px;
-    color: gray;
-}
-
-.dia-nombre {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #ffffff;
+    width: calc(100% / 7);
+    padding: 15px 0;
     text-align: center;
-    padding-top: 15%;
-    line-height: 50px;
-    font-weight: bold;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray; 
-    background-color: #147424;
+    border: 1px solid #016601;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: black;
 }
 
-.dia-desabilitado {
-    background-color: #999ca0;
+.dia.vacio {
+    background-color: #016601; 
+    border: 1px solid rgb(0, 0, 0)
 }
 
 .cursos {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 12px;
+    padding: 8px;
     margin: 10px;
     font-size: 14px;
     color: #ffffff;
@@ -100,26 +84,7 @@ main{
     background-color: #f4b400; 
 }
 
-
-.cursos {
-    grid-column: span 1; 
-}
-
-.dia-python {
-    background-color: #4a90e2;
-    color: white;
-}
-.dia-javascript{
-    background-color: #f4b400;
-    color: white;
-}
-
-.dia-css {
-    background-color: #c02f03;
-    color: white;
-}
-
-.dia-html {
-    background-color: #790983;
-    color: white;
+.desabilitado{
+    background-color: grey;
+    color: rgb(168, 168, 168);
 }

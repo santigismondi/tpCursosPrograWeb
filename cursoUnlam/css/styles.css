@@ -217,4 +217,41 @@ button:hover {
         align-items: center;
         gap: 2rem;
     }
+
+    /*Contacto*/
+    .info_container{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        gap: 2rem;
+    }
+    form{
+        width: 240px;
+    }
+    .datos_contacto{
+        width: 240px;
+        padding: 20px 20px;
+
+    }
+    .info_container{
+        margin: 0;
+        align-items: center;
+    }
+    .titulo_datos{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .mapa{
+        width: 270px;
+    }
+    .datos_contacto p{
+        padding: 0;
+    }
+    #footer_btm{
+        margin-top: 2rem;
+    }
+
+
 }

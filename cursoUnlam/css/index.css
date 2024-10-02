@@ -112,5 +112,57 @@ a{
 .contenedorCursos{
     margin: 10px;
 }
+@media (max-width: 900px){
+    .parrafoBienvenida{
+        margin-left: -50%;
+        width: 30%;
+    }
+    .gridCursos{
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .curso{
+        width: 300px;
+        padding: 10px;
+        margin: 20px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: #000000 1px solid;
+        align-self:center;
+    }
+    .contenedorSubtitulo{
+        display: flex;
+        justify-content:center;
+    }
+    .subtituloCurso{
+        margin-left: 0px;
+    }
+}
 @media (max-width: 768px){
+    .parrafoBienvenida{
+        margin-left: -50%;
+        width: 30%;
+    }
+    .gridCursos{
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .curso{
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        border: #000000 1px solid;
+        align-self:center;
+    }
+    .contenedorSubtitulo{
+        display: flex;
+        justify-content:center;
+    }
+    .subtituloCurso{
+        margin-left: 0px;
+    }
 }

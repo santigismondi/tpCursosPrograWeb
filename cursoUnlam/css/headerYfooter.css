@@ -19,6 +19,28 @@ nav a{
     justify-content: center;
 
 }
+.botonIniciarSesion{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    padding-right: 10px;
+    width:120px;
+    font-weight: 600;
+}
+.botonRegistrarse{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #000000;
+    border: 2px solid #000000;
+    outline: none;
+    margin:auto;
+    padding-right: 10px;
+    width:120px;
+    font-weight: 600;
+}
 .inputBusqueda{
     padding: 10px;
     padding-right: 35px;
@@ -198,7 +220,8 @@ nav a{
 }
 
 /* Fin Footer */
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 900px) {
     .header {
         flex-direction: column;
         height: auto;

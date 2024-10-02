@@ -98,6 +98,7 @@ nav a{
     outline: none;
     margin:auto;
     font-style: 00ce60;
+    cursor: pointer;
 }
 .logoCarritoHeader{
     color: #000000;
@@ -270,4 +271,5 @@ nav a{
     .footer-column {
         flex: 1 0 50%;
     }
+
 }

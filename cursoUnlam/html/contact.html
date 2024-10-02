@@ -4,12 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/01937a623d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/headerYfooter.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
 </head>
 <body class="contact">
-    <p>Completá tus datos y contactanos</p>
+    <header class="header">
+        <div class="divHeader">
+            <a href="../html/home.html" class="logoHeader">
+                <img class="imagenHeader" src="../img/unlam-logo.png"/>
+                <h2 class="nombreHeader"> Cursos UNLAM</h2>
+            </a>
+        </div> 
+        <div class="divHeaderBuscador">
+            <input class="inputBusqueda" type="text" placeholder="Buscar cursos">
+            <a class=contenededorBotonBusqueda href="#">
+                <button class="botonBusqueda">
+                    <span class="logoLupa"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+            </a>
+        </div>
+        <nav class="navHeader">
+            <a href="./carrito.html" class="miCarrito">
+                <button class="botonCarritoHeader">                    
+                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                </button>
+            </a>
+            <a href="./calendario.html" class="misCursos">
+                <button class="botonCalendario">                    
+                    <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
+                    <span>Mis Cursos</span>
+                </button>
+            </a>
+            <a href="./miPerfil.html" class="miPerfil">
+                <button class="botonMiPerfil">                    
+                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
+                    <span>Mi Perfil</span>
+                </button>
+            </a>
+        </nav>       
+    </header> 
+
+    <p class="titulo_datos">Completá tus datos y contactanos</p>
+
     <div class="info_container">
+
         <div>
             <form action="#" method="post">
                 <div class="form-group">
@@ -21,16 +61,28 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
+                    <label for="email">Telefono:</label>
+                    <input type="email" id="tel" name="email" required>
+                </div>
+                <div class="form-group">
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button class="form_btn" type="submit">Enviar</button>
             </form>
         </div>
-        <div></div>
+
+        <div class="datos_contacto">
+            <p><b>Dirección:</b> Florencio Varela 1903, San Justo.</p>
+            <p><b>Teléfono:</b> 0800-333-1133</p>
+            <p><b>Correo:</b> cursos@unlam.edu.ar</p>
+            <p><b>Horario de atención:</b> Lunes a Viernes de 8:00 a 20:00</p>
+
+        </div>
+        <img src="../img/map.png" alt="">
     </div>
 </body>
-<footer class="custom-footer">
+<footer id="footer_btm" class="custom-footer">
     <div class="footer-content">
         <div class="footer-column">
             <h3 class="footer-title">Integrantes del grupo</h3>

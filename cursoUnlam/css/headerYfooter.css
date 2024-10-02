@@ -260,4 +260,14 @@ nav a{
     .headerMenu .navMenu .barraMenu li a {
         font-display: none;
     }
+
+}
+
+@media (max-width: 400px) {
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    .footer-column {
+        flex: 1 0 50%;
+    }
 }

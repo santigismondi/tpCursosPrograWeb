@@ -149,3 +149,10 @@ input[type="radio"][value="black"]:checked ~ .card-preview {
     background-color: #f9f9f9; 
     margin-bottom: 5rem;
 }
+
+@media (max-width: 400px) {
+    .background-preview {
+        flex-direction: column;
+        align-items: center;
+    }
+}

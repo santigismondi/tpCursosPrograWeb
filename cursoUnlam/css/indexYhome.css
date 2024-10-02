@@ -11,10 +11,12 @@ a{
 /*Home*/
 .gridCursos{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+}
+
+.gridCursos a{
+    color: #000000;
 }
 .contenedorSubtitulo{
     display: flex;
@@ -33,6 +35,7 @@ a{
 .curso{
     width: 400px;
     padding: 10px;
+    margin: 10px;
     background-color: #ffffff;
     border-radius: 2px;
     border: #000000 1px solid;
@@ -112,6 +115,7 @@ a{
 .contenedorCursos{
     margin: 10px;
 }
+
 @media (max-width: 900px){
     .parrafoBienvenida{
         margin-left: -50%;

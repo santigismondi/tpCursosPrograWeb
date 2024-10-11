@@ -223,7 +223,7 @@ nav a{
 
 /* Fin Footer */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1368px) {
     .header {
         flex-direction: column;
         height: auto;
@@ -251,6 +251,11 @@ nav a{
     .headerMenu .navMenu .barraMenu {
         flex-direction:row;
         justify-content: center;
+        font-size: 0.9rem;
+    }
+    .itemMenuLink:hover{
+        font-size: 1.01rem;
+        color: #00ce60;
     }
     .itemMenuLink{
         padding-right: 5%;
@@ -265,7 +270,14 @@ nav a{
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+    .headerMenu .navMenu .barraMenu {
+        font-size: 0.6rem;
+    }
+    .itemMenuLink:hover{
+        font-size: 0.7rem;
+        color: #00ce60;
+    }
     .footer-content {
         flex-wrap: wrap;
     }

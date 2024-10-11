@@ -35,8 +35,8 @@ main {
 }
 
 .table-header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #00ce60;
+    color: #000000;
     padding: 10px;
 }
 
@@ -51,24 +51,39 @@ main {
 
 .total-row {
     font-weight: bold;
+    text-align: right;
 }
-
+.total-amount{
+    font-weight: bold;
+    text-align: center;
+}
 .total-label {
     text-align: right;
 }
-
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 .checkout-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    display: flex;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #00ce60;
+    outline: none;    
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+    color: #000000;
+    justify-content: center;
 }
 
-.checkout-button:hover {
+/* .checkout-button:hover {
     background-color: #45a049;
+} */
+
+@media screen and (max-width: 600px) {
+    .cart-table {
+        font-size: 0.8rem;
+    }
+    
 }

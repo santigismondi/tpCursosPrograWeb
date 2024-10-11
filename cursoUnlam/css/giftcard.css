@@ -57,20 +57,21 @@ input::placeholder {
 }
 
 .confirm-button {
+    display: flex;
+    border-radius: 5px;
+    background-color: #00ce60;
+    outline: none;    
+    font-size: 1rem;
     padding: 10px;
-    background-color: #0b812e;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 20px;
+    margin: 5px;
+    color: #000000;
+    justify-content: center;
 }
 
-.confirm-button:hover {
+/* .confirm-button:hover {
     background-color: #76d47e;
     color: #333;
-}
+} */
 
 .card-preview {
     background-color: #f9f9f9;

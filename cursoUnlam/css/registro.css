@@ -56,15 +56,14 @@ a{
     margin-top: 20px;
 }
 .botonRegistro{
-    padding: 10px;
+    display: flex;
     border-radius: 5px;
     background-color: #00ce60;
-    border: 0;
-    outline: none;
-    color: #000000;
-    font-weight: 600;
+    outline: none;    
     font-size: 1rem;
-    cursor: pointer;
+    padding: 10px;
+    color: #000000;
+    justify-content: center;
 }
 .contenedorDatosEmpresa{
     height: 100%;

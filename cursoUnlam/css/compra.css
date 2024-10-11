@@ -39,7 +39,8 @@ main {
 
 .total-value {
     font-size: 24px;
-    color: #4CAF50;
+    color: #00ce60;
+    font-weight: bold;
 }
 
 .form-label {
@@ -49,7 +50,7 @@ main {
 }
 
 .form-input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -57,17 +58,17 @@ main {
 }
 
 .submit-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
+    display: flex;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #00ce60;
+    outline: none;    
+    font-size: 1rem;
+    padding: 10px;
+    color: #000000;
+    justify-content: center;
+    width: 100%;
 }
 
-.submit-button:hover {
+/* .submit-button:hover {
     background-color: #45a049;
-}
+} */

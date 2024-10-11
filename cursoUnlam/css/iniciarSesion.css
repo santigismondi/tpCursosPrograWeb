@@ -11,26 +11,31 @@ a{
 /*Home*/
 .contenedorIniciarSesion{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-    height: 50%;
-    margin-top: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 20px;
-    border-radius: 15px;
+    justify-content:flex-start;
+    margin-left: 20px;
 }
-.contenedorCargaDatos{
+.contenedorInicio{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
-    height: 50%;
-    padding: 20px;
+    height: 50vh;
     border-radius: 15px;
+    width: 100%;
+    margin-bottom: 3.4%;
+}
+.contenedorCargaDatos{
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 50%;
+}
+.boxForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
 }
 .formNombre{
     display: flex;
@@ -45,7 +50,15 @@ a{
     border-radius: 5px;
     border: 1px solid #000000;
     outline: none;
+    width: 50%;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    padding: 10px;
 }
 .contenedorBotonIniciarSesion{
     display: flex;
@@ -55,7 +68,7 @@ a{
     width: 100%;
     padding: 10px;
 }
-.botonIniciarSesion{
+.botonInicioSesion{
     border-radius: 5px;
     border-color: #000000;
     border-style: solid;

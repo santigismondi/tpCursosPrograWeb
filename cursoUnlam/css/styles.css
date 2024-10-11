@@ -31,7 +31,8 @@ a{
 }
 .contenido_item{
     display: flex;
-    align-items: center;}
+    align-items: center;
+}
 
 .contenido_titulo{
     margin: 1.4rem 1rem;
@@ -142,13 +143,14 @@ textarea {
 
 
 .form_btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #00ce60;
+    outline: none;    
+    font-size: 1rem;
+    padding: 10px;
+    color: #000000;
+    justify-content: center;
     width: 100%;
 }
 .datos_contacto{
@@ -160,12 +162,101 @@ textarea {
     width: 400px;
     align-content: center;
 p{padding: 1rem 0;}}
+@media only screen and (max-width: 1368px) {
 
-button:hover {
-    background-color: #218838;
+    .curso_detalles{
+        flex-direction: column;
+        margin-top: 12rem;
+        margin: auto;
+        height: auto;
+        padding-top: 1rem;
+    }
+    .curso_detalles img{
+        height: 35vh;
+        margin: auto;
+    }
+    .cursos_relacionados{
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    .cursos_relacionados{
+        flex-direction: column;
+    }
+    .contenido_container{
+        flex-direction: column;
+    }
+    .navMenu {
+        display: none;
+    }
+    .profesor_container{
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .titulo_curso{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .curso_info{
+        margin: 0 1rem;
+        padding-bottom: 4rem;
+        display: wrap;
+    }
+    .inscribirse{
+        margin: 2rem auto 0 auto;
+    }
+    .contenido_titulo{
+        margin: 0.4rem 1rem;
+        font-size: 1rem;
+    }
+    .profesor_img{
+        height: 120px;
+    }
+    .profesor_info{
+        padding: 0;
+    }
+    .profesor_info p{
+        font-size: 1rem;
+    }
+
+    /*Contacto*/
+    .info_container{
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        gap: 2rem;
+    }
+    form{
+        width: 240px;
+    }
+    .datos_contacto{
+        width: 240px;
+        padding: 20px 20px;
+
+    }
+    .info_container{
+        margin: 0;
+        align-items: center;
+    }
+    .titulo_datos{
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .mapa{
+        width: 270px;
+    }
+    .datos_contacto p{
+        padding: 0;
+    }
+    #footer_btm{
+        margin-top: 2rem;
+    }
+
+
 }
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
 
     .curso_detalles{
         flex-direction: column;

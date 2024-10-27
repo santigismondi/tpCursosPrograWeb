@@ -62,12 +62,17 @@
     <div class="Gift-card-container">
         <section class="card-container">
             <h1>Personaliza tu Gift Card</h1>
+            <div class="flex-container">
             <form class="gift-card-form">
                 <label for="monto">Monto:</label>
                 <input type="number" id="monto" class="monto" nombre="monto" min="1" placeholder="Ingrese el monto" required>
 
+                <label for="cardevento-input">Nombre del evento</label>
+                <input type="text" id="cardevento-input" class="card-evento" nombre="cardevento" placeholder="Ingrese el evento" required>
+
                 <label for="cardnombre-input">Nombre de la Tarjeta:</label>
                 <input type="text" id="cardnombre-input" class="card-nombre" nombre="cardnombre" placeholder="Ingrese el nombre" required>
+
 
                 <section class="color-options">
                     <h2>Color de Tipografía</h2>
@@ -76,7 +81,7 @@
                     </label>
                     <label>
                         <input type="radio" name="text-color" value="blue" class="text-color"> Azul
-                    </label>
+                    </label>   
                     <label>
                         <input type="radio" name="text-color" value="green" class="text-color"> Verde
                     </label>
@@ -90,48 +95,61 @@
                 </section>
 
                 <section class="position-options">
-                    <h2>Posición de Tipografía</h2>
+                    <h2>Fuente</h2>
                     <label>
-                        <input type="radio" name="Position" value="center" class="text-color"> Centrado
+                        <input type="radio" name="Position" value="center" class="center"> Centrado
                     </label>
                     <label>
-                        <input type="radio" name="Position" value="top/left" class="text-color"> Arriba/izquieda
+                        <input type="radio" name="Position" value="top/left" class="top-left"> Arriba/izquieda
                     </label>
                     <label>
-                        <input type="radio" name="Position" value="bottom/right" class="text-color"> Abajo/Derecha
+                        <input type="radio" name="Position" value="bottom/right" class="bottom-right"> Abajo/Derecha
                     </label>
+                </section>
+
+                <section class= "options-font-size">
+                    <label for="font-size">Tamaño de Fuente:</label>
+                    <select id="font-size" class="font-size" required>
+                    <option value="10px">Pequeño</option>
+                    <option value="14px" selected>Mediano</option>
+                    <option value="18px">Grande</option>
+                    <option value="20px">Muy Grande</option>
+                </select>
+
                 </section>
                 
                 <section class="background-options">
                     <h2>Elegir Fondo de la Gift Card</h2>
                     <div class="background-preview">
                         <label>
-                            <input type="radio" name="background" value="bg1" class="background-image"> 
+                            <input type="radio" name="background" value="fondo1" class="background-image"> 
                             <img src="../img/fondo1.jpeg" alt="Fondo 1" class="preview-image">
                         </label>
                         <label>
-                            <input type="radio" name="background" value="bg2" class="background-image"> 
+                            <input type="radio" name="background" value="fondo2" class="background-image"> 
                             <img src="../img/fondo2.jpeg" alt="Fondo 2" class="preview-image">
                         </label>
                         <label>
-                            <input type="radio" name="background" value="bg3" class="background-image"> 
+                            <input type="radio" name="background" value="fondo3" class="background-image"> 
                             <img src="../img/fondo3.jpeg" alt="Fondo 3" class="preview-image">
                         </label>
                     </div>
                 </section>
 
                 <button type="submit" class="confirm-button"><a href="./carrito.html"> Confirmar</a></button>
-
-                <div class="card-preview">
-                    <h2>Detalles de la Gift Card</h2>
-                    <p><strong>Monto:</strong> <span class="display-monto">--</span></p>
-                    <p><strong>Nombre de la Tarjeta:</strong> <span class="display-card-nombre">--</span></p>
-                    <p><strong>Número de Tarjeta:</strong> <span class="display-card-numero">1234567890123</span></p>
-                </div>
             </form>
+            
+            <div class="card-preview">
+                <h2>Detalles de la Gift Card</h2>
+                <p><strong>Monto:</strong> <span class="display-monto">--</span></p>
+                <p><strong>Nombre de la Tarjeta:</strong> <span class="display-card-nombre">--</span></p>
+                <p><strong>Número de Tarjeta:</strong> <span class="display-card-numero">1234567890123</span></p>
+            </div>
+
         </section>
         
     </div>
+    
     
     </main>
 
@@ -166,5 +184,6 @@
         </div>
     </footer>
 
+    <script src="../js/giftcard.js" defer></script>
 </body>
 </html>

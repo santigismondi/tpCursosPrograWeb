@@ -28,7 +28,16 @@ h1 {
     margin-bottom: 20px;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre los elementos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-top: 20px; /* Espacio superior entre el título y el contenedor */
+}
+
 .gift-card-form {
+    flex: 1;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -48,6 +57,14 @@ label {
     font-size: 14px;
 }
 
+.card-evento {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
 .monto {
     font-family: Arial, sans-serif;
 }
@@ -55,6 +72,18 @@ label {
 input::placeholder {
     color: #aaa;
 }
+
+.font-size {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    appearance: none; /* Para quitar el estilo predeterminado del select */
+    background-color: #fff; /* Color de fondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el select */
+}
+
 
 .confirm-button {
     display: flex;
@@ -68,29 +97,11 @@ input::placeholder {
     justify-content: center;
 }
 
-/* .confirm-button:hover {
-    background-color: #76d47e;
-    color: #333;
-} */
-
-.card-preview {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 20px;
-    text-align: left;
-}
-
 .card-preview h2 {
-    color: #333;
-    font-size: 18px;
     margin-bottom: 15px;
 }
 
 .card-preview p {
-    font-size: 16px;
-    color: #555;
     margin: 5px 0;
 }
 
@@ -100,30 +111,6 @@ input::placeholder {
     font-weight: bold;
 }
 
-/* Colores de texto */
-input[type="radio"].text-color:checked ~ .card-preview {
-    color: inherit;
-}
-
-input[type="radio"][value="red"]:checked ~ .card-preview {
-    color: red;
-}
-
-input[type="radio"][value="blue"]:checked ~ .card-preview {
-    color: blue;
-}
-
-input[type="radio"][value="green"]:checked ~ .card-preview {
-    color: green;
-}
-
-input[type="radio"][value="white"]:checked ~ .card-preview {
-    color: white;
-}
-
-input[type="radio"][value="black"]:checked ~ .card-preview {
-    color: black;
-}
 
 /* Estilos del fondo */
 .background-preview {
@@ -143,17 +130,44 @@ input[type="radio"][value="black"]:checked ~ .card-preview {
 /* La Gift Card */
 .card-preview {
     transition: color 0.3s;
+    font-size: 14px;
     padding: 50px;
-    margin-top: 20px;
+    margin-top: 150px;
+    margin-left: 100px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9; 
+    border-radius: 8px; 
     margin-bottom: 5rem;
+    flex: 0 0 400px; /* Fija el ancho de la vista previa (ajústalo según sea necesario) */
+    height: 250px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Alinea elementos en columna */
+    justify-content: flex-start; /* Alineación por defecto */
+    align-items: center; /* Alineación horizontal por defecto */
 }
+
+
 
 @media (max-width: 400px) {
     .background-preview {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column; /* Cambia la dirección a columna */
+        align-items: stretch; /* Alinea los elementos a lo largo del eje transversal */
+    }
+
+    .gift-card-form {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 20px; /* Agrega espacio inferior entre el formulario y la vista previa */
+    }
+
+    .card-preview {
+        flex: 1; /* Permite que la vista previa ocupe el ancho completo */
+        margin-top: 10px;
+        margin-left: 10px;
     }
 }

@@ -5,7 +5,6 @@
         <link rel="stylesheet" type="text/css" href="../css/indexYhome.css">
         <link rel="stylesheet" type="text/css" href="../css/headerYfooter.css">
         <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
-        <script src="../js/homeCarrito.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1, maximumscale=1">
 </html>
 <body>
@@ -25,17 +24,31 @@
             </a>
         </div>
         <nav class="navHeader">
-            <a href="./carrito.html" class="miCarrito">
-                <button class="botonCarritoHeader">                    
-                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
-                </button>
-            </a>
+            <div class="botonCarro">
+                <div class="miCarrito">
+                    <button class="botonCarritoHeader">                    
+                        <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
+                        <span id="contadorProd">0</span>
+                    </button>
+                </div>
+            </div>
             <div class="containerCarritoProductos hidden-carrito">
+                <span class="logoCarritoCerrar"><i class="fa-solid fa-xmark"></i></span>
+                <h2 class="descCarrito">Tu Carrito</h2>
                 <div class="carritoProducto">
-                    <div class="infoCarritoProducto">
-                        <span class="cantidadProductoCarrito">1</span>
-                        <p class="tituloProductoCarrito">Curso CSS</p>
-                        <span class="precioProductoCarrito">$25.000</span>
+                    <div class="jsRowProduct">
+                        <div class="infoCarritoProducto">
+                            <span class="cantidadProductoCarrito">1</span>
+                            <p class="tituloProductoCarrito">Curso CSS</p>
+                            <span class="precioProductoCarrito">$25.000</span>
+                        </div>
+                    </div>
+                    <div class="carritoTotal">
+                        <h3 class="totalCarrito">Total:</h3>
+                        <span class="totalAPagar">$25000</span>
+                    </div>
+                    <div class="botonCompra">
+                        <button class="botonFinalizarCompra">Finalizar Compra</button>
                     </div>
                 </div>
             </div>
@@ -51,7 +64,8 @@
                     <span>Mi Perfil</span>
                 </button>
             </a>
-        </nav>       
+        </nav>  
+        
     </header> 
     <header class="headerMenu">
         <nav class="navMenu">
@@ -84,8 +98,7 @@
         <h2 class="subtituloCurso">Aprende a programar!</h2>
     </div> 
     <div class="gridCursos">
-        <div class="curso a">
-            <a href="../html/detalles.html">            
+        <div class="curso a">                      
                     <div>
                         <img class="imagenCurso" src="../img/miniaturas/css.jpg">
                     </div>
@@ -108,7 +121,6 @@
                             </button>
                         </a>
                     </div>            
-                </a>
             </div>
         <a href="../html/detalles.html">
             <div class="curso b">
@@ -190,6 +202,7 @@
         </div>
     </div>
 </div>
+<script src="../js/homeCarrito.js"></script>
 </body>
 <footer class="custom-footer">
     <div class="footer-content">

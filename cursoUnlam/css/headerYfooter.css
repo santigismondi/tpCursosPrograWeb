@@ -1,4 +1,13 @@
 /*Header*/
+.navHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: #ffffff;
+    padding: 10px;
+    gap: 10px;
+}
 nav a{
     font-weight: 600;    
 }
@@ -125,7 +134,63 @@ nav a{
     height: 50px;
     margin-right: 10px;
 }
+.botonCompra{
+    display: flex;
+    align-items: center;
 
+}
+
+.containerCarritoProductos {
+    position: fixed;
+    right: 0; 
+    top: 0; 
+    padding: 10px;
+    background-color: #ffffff;
+    width: 17%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 0px 5px rgba(0,0,0,0.1); 
+}
+.botonCarro{
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+.infoCarritoProducto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 25px;
+    font-size: 0.95rem;
+}
+.logoCarritoCerrar{
+    position: absolute;
+    margin: 10px;
+    color: #000000;
+    right: 0; 
+    top: 0; 
+    cursor: pointer;
+}
+.logoCarritoCerrar:hover{
+    font-size: 1.01rem;
+    color: #00ce60;
+}
+.hidden-carrito{
+    display: none;
+}
+.botonFinalizarCompra{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00ce60;
+    border: 2px solid #000000;
+    outline: none;
+    margin-top:10%;
+    width: 100%;
+    cursor: pointer;
+}
 /*Menu Header*/
 .headerMenu{
     border-top-color: #000000;
@@ -222,10 +287,6 @@ nav a{
     color: #ffffff;
 }
 
-.containerCarritoProductos{
- 
-}
-
 /* Fin Footer */
 
 @media screen and (max-width: 1368px) {
@@ -273,6 +334,10 @@ nav a{
         font-display: none;
     }
 
+    .contadorProductos{
+        top: 9.7em;
+        right: 36.5em;
+    }
 }
 
 @media (max-width: 500px) {
@@ -289,5 +354,8 @@ nav a{
     .footer-column {
         flex: 1 0 50%;
     }
-
+    .contadorProductos{
+        top: 155px;
+        right: 345px;
+    }
 }

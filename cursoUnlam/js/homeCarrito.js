@@ -99,3 +99,21 @@ const showHTML = () => {
     valorTotal.innerHTML = `$${totalPrecio}`;
     contadorProductos.innerHTML = totalCarrito;
 }
+
+/**
+ * Slider
+ */
+
+const sliderContenedorImagenes = document.querySelector('.contenedorImagenHome');
+let index = 1;
+const imagenes = sliderContenedorImagenes.querySelectorAll('.imagenHome').length;
+
+
+setInterval(function(){
+    const porcentaje = index * -100;
+    sliderContenedorImagenes.style.transform = "translateX("+ porcentaje +"%)";
+    index++;
+    if(index > imagenes-1){
+        index = 0;
+    }
+},1000);

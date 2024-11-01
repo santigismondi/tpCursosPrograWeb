@@ -178,6 +178,9 @@ nav a{
     font-size: 1.01rem;
     color: #00ce60;
 }
+.logoEliminarCarrito:hover{
+    color: #e00000;
+}
 .hidden-carrito{
     display: none;
 }
@@ -305,7 +308,10 @@ nav a{
         width: 70%;
         margin-bottom: 10px;
     }
-
+    .containerCarritoProductos {
+        width: 25%;
+    }
+    
     .inputBusqueda{
         height: 100%;
     }

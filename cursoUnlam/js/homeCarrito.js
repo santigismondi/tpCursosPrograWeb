@@ -3,6 +3,20 @@ const containerCarrito = document.querySelector('.containerCarrito');
 const containerCarritoProductos = document.querySelector('.containerCarritoProductos');
 const btnCerrarCarrito = document.querySelector('.logoCarritoCerrar');
 
+const guardarCarritoEnStorage = () => {
+    localStorage.setItem('carrito', JSON.stringify(todosLosCursos));
+};
+
+const cargarCarritoDeStorage = () => {
+    const carritoGuardado = JSON.parse(localStorage.getItem('carrito'));
+    if (carritoGuardado) {
+        todosLosCursos = carritoGuardado;
+        showHTML();
+    }
+};
+
+document.addEventListener('DOMContentLoaded', cargarCarritoDeStorage);
+
 /**
  * Funciones para mostrar y cerrar carrito
  */
@@ -22,7 +36,8 @@ const infoCarrito = document.querySelectorAll('.carritoProducto');
 const lineaCarrito = document.querySelector('.infoCarritoProducto');
 const listaCursos = document.querySelector('.gridCursos');
 let todosLosCursos = [];
- 
+const valorTotal = document.querySelector('.totalAPagar');
+const contadorProductos = document.querySelector('.contadorProd');
 
 listaCursos.addEventListener('click', (e) => {
 
@@ -36,8 +51,23 @@ listaCursos.addEventListener('click', (e) => {
                 nombre: producto.querySelector('.nombreCurso').textContent,
                 precio: producto.querySelector('.precioCurso').textContent,
         }
-        todosLosCursos = [...todosLosCursos, infoProducto];
+        const existente = todosLosCursos.some( producto => producto.nombre === infoProducto.nombre);
+        if(existente){
+            const productos = todosLosCursos.map( producto => {
+                if(producto.nombre === infoProducto.nombre){
+                    producto.cantidad++;
+                    return producto;
+                }else{
+                    return producto;
+                }
+            });
+            todosLosCursos = [...productos];
+        }else{  
+            todosLosCursos = [...todosLosCursos, infoProducto];
+        }
+
         showHTML();
+        guardarCarritoEnStorage();
     }
 });
 
@@ -45,18 +75,27 @@ const showHTML = () => {
     const jsRowProduct = document.querySelector('.jsRowProduct');
     jsRowProduct.innerHTML = '';
 
+    let totalPrecio = 0;
+    let totalCarrito = 0;
+
     todosLosCursos.forEach( producto => {
         const containerProductos = document.createElement('div');
 
         containerProductos.classList.add('infoCarritoProducto');
 
         containerProductos.innerHTML = `
-            <div class="infoCarritoProducto">
                 <span class="cantidadProductoCarrito">${producto.cantidad}</span>
                 <p class="tituloProductoCarrito">${producto.nombre}</p>
                 <span class="precioProductoCarrito">${producto.precio}</span>
-            </div>`;
+                <span class="logoEliminarCarrito"><i class="fa-solid fa-trash"></i></span>
+                `;
 
         jsRowProduct.append(containerProductos);
+
+        totalPrecio = totalPrecio + parseInt(producto.precio.slice(1) * producto.cantidad);
+        totalCarrito = totalCarrito + producto.cantidad;
     });
+
+    valorTotal.innerHTML = `$${totalPrecio}`;
+    contadorProductos.innerHTML = totalCarrito;
 }

@@ -65,7 +65,7 @@ function agregarPersona(event){
 
 let botonQuitar = document.querySelectorAll('.inscribir-empresa-boton')
 botonQuitar.forEach(boton =>{boton.addEventListener('click', eliminarPersona)})
-/*botonQuitar.addEventListener('click',eliminarPersona);*/
+
 
 function eliminarPersona(event){
         console.log("Boton quitar")
@@ -73,17 +73,8 @@ function eliminarPersona(event){
         if (nuevaPersona) {
             nuevaPersona.remove();
         }
-        /*document.querySelector('.formulario-input').removeChild(nuevaPersona);*/
+        
 }
 
 
-/*const botonQuitar = document.querySelector('.inscribir-empresa-boton');
-botonQuitar.addEventListener('click',eliminarPersona);
 
-function eliminarPersona(event){
-    console.log("Boton quitar")
-    
-    const nuevaPersona = document.querySelector('.fila');
-    document.querySelector('.formulario-input').removeChild(nuevaPersona);
-    
-}*/

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cursos UNLAM</title>
+        <title>Cursos UNLAM - Registrate</title>
         <link rel="stylesheet" type="text/css" href="../css/registro.css">
         <link rel="stylesheet" type="text/css" href="../css/headerYfooter.css">
         <script src="https://kit.fontawesome.com/2edf5860bb.js" crossorigin="anonymous"></script>
@@ -9,8 +9,8 @@
 <body>
     <header class="header">
         <div class="divHeader">
-            <a href="../html/home.html" class="logoHeader">
-                <img class="imagenHeader" src="../img/unlam-logo.png"/>
+            <a href="./index.html" class="logoHeader">
+                <img class="imagenHeader" src="../img/unlam-logo-masClaro.png"/>
                 <h2 class="nombreHeader"> Cursos UNLAM</h2>
             </a>
         </div> 
@@ -23,34 +23,17 @@
             </a>
         </div>
         <nav class="navHeader">
-            <a href="./carrito.html" class="miCarrito">
-                <button class="botonCarritoHeader">                    
-                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
-                </button>
-            </a>
-            <a href="./calendario.html" class="misCursos">
-                <button class="botonCalendario">                    
-                    <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
-                    <span>Mis Cursos</span>
-                </button>
-            </a>
-            <a href="./miPerfil.html" class="miPerfil">
-                <button class="botonMiPerfil">                    
-                    <span class="logoPerfil"><i class="fa-solid fa-user"></i></span>
-                    <span>Mi Perfil</span>
-                </button>
-            </a>
+            <button class="botonIniciarSesion"><a href="./cursoUnlam/html/iniciarSesion.html" class="iniciarSesion">Iniciar Sesion</a></button>
+            <button class="botonRegistrarse"><a href="./cursoUnlam/html/registro.html" class="registrarse">Registrarse</a></button>
         </nav>       
     </header> 
     <header class="headerMenu">
         <nav class="navMenu">
             <ul class="barraMenu">
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
-                <a href="../html/giftcard.html" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
-            
+                <a href="./cursoUnlam/html/registro.html" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="./cursoUnlam/html/registro.html" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="./cursoUnlam/html/registro.html" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="./cursoUnlam/html/registro.html" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
             </ul>
         </nav>
     </header> 
@@ -65,50 +48,42 @@
         </div>
         <div class="contenedorForm">        
             <div class="contenedorCargaDatos">
-                <form action="">
+                <form id="formRegistro">
                     <div class="formNombre">
                         <span>Nombre:</span>
-                        <input type="text">
+                        <input type="text" id="nom" required>
                     </div>
                     <div class="formNombre">
                         <span>Apellido:</span>
-                        <input type="text">
+                        <input type="text" id="ape" required>
                     </div>
                     <div class="formNombre">
                         <span>Telefono:</span>
-                        <input type="number">
+                        <input type="number" id="tel" required>
                     </div>
                     <div class="formNombre">
                         <span>Email:</span>
-                        <input type="email">
+                        <input type="email" id="mail" required>
+                    </div>
+                    <div class="formNombre">
+                        <span>Contrasena:</span>
+                        <input type="password" id="pass" required>
                     </div>
                     <div class="formTextArea">
                         <span>Dejanos tu consulta:</span>
                         <textarea></textarea>
                     </div>
-                </form>
-                <div class="contenedorBotonRegistro">
-                    <a class=contenededorBotonCarrito href="../html/home.html">                
+                    <div class="contenedorBotonRegistro">              
                         <button class="botonRegistro"> Registrate </button>
-                    </a>
-                </div> 
-            </div>
-<!--             <div class="contenedorDatosEmpresa">
-                <h3>Universidad Nacional de La Matanza</h3>          
-                <p><b>Rector:</b> Dr. Daniel Eduardo Martínez</p>
-                <p><b>Campus:</b> Urbano </p>
-                <p><b>Fundación:</b> 29 de septiembre de 1989 </p>
-                <p><b>Teléfono:</b> 011 4480-8900 </p>
-                <div>
-                    <p><b>Dirección: </b>Florencio Varela 1903, B1754 San Justo, Provincia de Buenos Aires</p>
-                    <iframe class="mapaUnlam" 
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1726357550859!5m2!1ses!2sar"  
-                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div> -->
+                    </div> 
+                </form>
+                <div class="containerIniciaSesion">
+                    <a class="iniciaSesion" href="./iniciarSesion.html">Inicia sesion</a>
+                </div>
             </div>
         </div>
     </div>
+    <script src="../js/registro.js"></script>
 </body>
 <footer class="custom-footer">
     <div class="footer-content">

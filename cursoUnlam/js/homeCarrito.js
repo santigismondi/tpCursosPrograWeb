@@ -32,7 +32,6 @@ btnCerrarCarrito.addEventListener('click', () => {
  * Funciones para agregar productos al carrito
  */
 
-const infoCarrito = document.querySelectorAll('.carritoProducto');
 const lineaCarrito = document.querySelector('.infoCarritoProducto');
 const listaCursos = document.querySelector('.gridCursos');
 let todosLosCursos = [];
@@ -70,7 +69,20 @@ listaCursos.addEventListener('click', (e) => {
         guardarCarritoEnStorage();
     }
 });
-
+/**
+ * Eliminar productos del carrito
+ */
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains('logoEliminarCarrito') || e.target.closest('.logoEliminarCarrito')){
+        const productoEliminado = e.target.parentElement.parentElement;
+        const productoNombre = productoEliminado.querySelector('.tituloProductoCarrito').textContent;
+        todosLosCursos = todosLosCursos.filter(
+            producto => producto.nombre !== productoNombre
+        );
+        showHTML();
+        guardarCarritoEnStorage();
+    }
+});
 const showHTML = () => {
     const jsRowProduct = document.querySelector('.jsRowProduct');
     jsRowProduct.innerHTML = '';
@@ -116,4 +128,4 @@ setInterval(function(){
     if(index > imagenes-1){
         index = 0;
     }
-},1000);
+},5000);

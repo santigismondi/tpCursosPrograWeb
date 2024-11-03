@@ -151,6 +151,7 @@ nav a{
     display: flex;
     flex-direction: column;
     box-shadow: -2px 0px 5px rgba(0,0,0,0.1); 
+    z-index: 10;
 }
 .botonCarro{
     width: fit-content;
@@ -176,7 +177,7 @@ nav a{
 }
 .logoCarritoCerrar:hover{
     font-size: 1.01rem;
-    color: #00ce60;
+    color: #e00000;
 }
 .logoEliminarCarrito:hover{
     color: #e00000;
@@ -193,6 +194,15 @@ nav a{
     margin-top:10%;
     width: 100%;
     cursor: pointer;
+}
+.mensajeCarritoVacio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 10px;
 }
 /*Menu Header*/
 .headerMenu{

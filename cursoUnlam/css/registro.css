@@ -73,6 +73,20 @@ a{
     height: 80%;
     border: 0;
 }
+.containerIniciaSesion{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.iniciaSesion{
+    transition-property: color, font-size;
+    transition-duration: 0.2s;
+}
+
+.iniciaSesion:hover{
+    font-size: 1.01rem;
+    color: #00ce60;
+}
 @media (max-width: 768px){
     
 }

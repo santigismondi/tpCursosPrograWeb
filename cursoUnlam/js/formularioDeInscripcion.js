@@ -1,38 +1,6 @@
 
-/*const webCursos = {
-    cursos: [
-      {
-        courseId: 1,
-        courseName: "CSS desde cero",
-        duration: "2 hs",
-        price: 25,
-      },
-      {
-        courseId: 2,
-        courseName: "HTML desde cero",
-        duration: "2 hs",
-        price: 20,
-      },
-      {
-        courseId: 3,
-        courseName: "HTML + CSS",
-        duration: "4 hs",
-        price: 40,
-        
-      },
-      {
-        courseId: 4,
-        courseName: "SQL completo",
-        duration: "4 hs",
-        price: 29.99,
-      },
-    ],
-    currency: "USD",
-  };*/
 
-  localStorage.setItem("listaDeCursos", JSON.stringify(webCursos));
 
-console.log("Hola");
 const botonAgregar = document.querySelector('.agregar-persona-boton');
 botonAgregar.addEventListener('click', agregarPersona);
 

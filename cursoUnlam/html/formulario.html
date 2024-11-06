@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="divHeader">
-            <a href="../html/home.html" class="logoHeader">
+            <a href="./home.html" class="logoHeader">
                 <img class="imagenHeader" src="../img/unlam-logo.png"/>
                 <h2 class="nombreHeader"> Cursos UNLAM</h2>
             </a>
@@ -27,11 +27,35 @@
             </a>
         </div>
         <nav class="navHeader">
-            <a href="./carrito.html" class="miCarrito">
-                <button class="botonCarritoHeader">                    
-                    <span class="logoCarritoHeader"><i class="fa-solid fa-basket-shopping"></i></span>
-                </button>
-            </a>
+            <div class="botonCarro">
+                <div class="miCarrito">
+                    <button class="botonCarritoHeader">                    
+                        <span class="logoCarritoHeader"><i class="fa-solid fa-cart-shopping"></i></span>
+                        <span class="contadorProd">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="containerCarritoProductos hidden-carrito">
+                <span class="logoCarritoCerrar"><i class="fa-solid fa-xmark"></i></span>
+                <h2 class="descCarrito">Tu Carrito</h2>
+                <div class="carritoProducto">
+                    <div class="jsRowProduct">
+                        <div class="infoCarritoProducto">
+                            <span class="cantidadProductoCarrito">1</span>
+                            <p class="tituloProductoCarrito">Curso CSS</p>
+                            <span class="precioProductoCarrito">$25.000</span>
+                            <span class="logoEliminarCarrito"><i class="fa-solid fa-trash"></i></span>
+                        </div>
+                    </div>
+                    <div class="carritoTotal">
+                        <h3 class="totalCarrito">Total:</h3>
+                        <span class="totalAPagar">$25000</span>
+                    </div>
+                    <div class="botonCompra">
+                        <button class="botonFinalizarCompra">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
             <a href="./calendario.html" class="misCursos">
                 <button class="botonCalendario">                    
                     <span class="logoCalendario"><i class="fa-solid fa-calendar-days"></i></span>
@@ -44,16 +68,17 @@
                     <span>Mi Perfil</span>
                 </button>
             </a>
-        </nav>       
+        </nav>  
+        
     </header> 
     <header class="headerMenu">
         <nav class="navMenu">
             <ul class="barraMenu">
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
-                <a href="#" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
-                <a href="../html/giftcard.html" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala un curso!</li></a>
+                <a href="../html/cursosProgramacion.html" class="itemMenuLink"><li class="barraMenuItems">Programacion</li></a>
+                <a href="../html/cursosProgramacion.html" class="itemMenuLink"><li class="barraMenuItems">Productividad</li></a>
+                <a href="../html/cursosProgramacion.html" class="itemMenuLink"><li class="barraMenuItems">Informatica</li></a>
+                <a href="../html/cursosProgramacion.html" class="itemMenuLink"><li class="barraMenuItems">Marketing</li></a>
+                <a href="../html/giftcard.html" class="itemMenuLink"><li class="barraMenuItemsRegalo">Regala una giftcard!</li></a>
             
             </ul>
         </nav>
@@ -91,6 +116,7 @@
         </section>
     </main>
 <script src="../js/formularioDeInscripcion.js"></script>
+<script src="../js/homeCarrito.js"></script>
 </body>
 <footer class="custom-footer">
     <div class="footer-content">

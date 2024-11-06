@@ -1,5 +1,37 @@
-/*Tengo que agregar un evento el boton que me agregue una linea mas del formulario*/
-/*Linkear archivo html con js*/
+
+/*const webCursos = {
+    cursos: [
+      {
+        courseId: 1,
+        courseName: "CSS desde cero",
+        duration: "2 hs",
+        price: 25,
+      },
+      {
+        courseId: 2,
+        courseName: "HTML desde cero",
+        duration: "2 hs",
+        price: 20,
+      },
+      {
+        courseId: 3,
+        courseName: "HTML + CSS",
+        duration: "4 hs",
+        price: 40,
+        
+      },
+      {
+        courseId: 4,
+        courseName: "SQL completo",
+        duration: "4 hs",
+        price: 29.99,
+      },
+    ],
+    currency: "USD",
+  };*/
+
+  localStorage.setItem("listaDeCursos", JSON.stringify(webCursos));
+
 console.log("Hola");
 const botonAgregar = document.querySelector('.agregar-persona-boton');
 botonAgregar.addEventListener('click', agregarPersona);
@@ -15,6 +47,7 @@ function agregarPersona(event){
     const inputEmail = document.createElement("input");
     const inputTelefono = document.createElement("input");
     const botonQuitar = document.createElement("input");
+    
 
     inputNombre.placeholder=("Nombre")
     inputNombre.type="text";
@@ -36,11 +69,11 @@ function agregarPersona(event){
     inputTelefono.type="number";
     inputTelefono.setAttribute('required', true);
 
+
     botonQuitar.className ="inscribir-empresa-boton";
     botonQuitar.type="button";
     botonQuitar.value="Quitar";
     botonQuitar.addEventListener('click', eliminarPersona);
-    
 
     nuevaPersona.appendChild(inputNombre);
     nuevaPersona.appendChild(inputApellido);
@@ -48,6 +81,7 @@ function agregarPersona(event){
     nuevaPersona.appendChild(inputEmail);
     nuevaPersona.appendChild(inputTelefono);
     nuevaPersona.appendChild(botonQuitar);
+
     
 
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
@@ -56,8 +90,6 @@ function agregarPersona(event){
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
-
-    
 
 }
 
@@ -77,4 +109,33 @@ function eliminarPersona(event){
 }
 
 
+
+//Guardar datos de los cursos
+function getCursos() {
+  const storedCursos = localStorage.getItem("cursos");
+  return JSON.parse(storedCursos);
+  };
+
+
+//Mostrar datos del curso al cual me quiero inscribir
+function mostrarDetallesDelCurso(){
+
+  const url = new URL(location.href)
+  const nombreCurso = url.searchParams.get('nombreCurso');
+  const cursos = getCursos();
+  const curso = cursos.curso.find(curso => curso.courseName === nombreCurso);
+    if(curso){
+      const tituloDelCurso = document.querySelector('.js-titulo-del-curso');
+      const precioDelCurso = document.querySelector('.js-precio-del-curso');
+  
+      tituloDelCurso.innerHTML = `${curso.courseName}`;
+      precioDelCurso.innerHTML = `${curso.price}`;
+    }
+    else{
+      console.log("Error")
+    }
+    
+};
+
+console.log(cursos);
 

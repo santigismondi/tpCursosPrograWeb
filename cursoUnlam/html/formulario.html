@@ -61,7 +61,7 @@
     <main>
 
         <section class="formulario">
-            <h1>Titulo curso</h1>
+            <h1 class="js-titulo-del-curso"> </h1>
             <p>Ingresa los datos de los miembros de tu empresa para poder anotarlos en nuestro curso:</p>
             <form action="" method="post">
                 <section class="formulario-input">
@@ -71,32 +71,18 @@
                     <input type="number" name="dni_1" id="dni_1" placeholder="DNI"required>
                     <input type="email" name="email_1" id="email_1" placeholder="Correo electronico" required>
                     <input type="number" name="telefono_1" id="telefono_1" placeholder="Telefono" required>
+                    <p class="js-precio-del-curso"> </p>
                     <input class="inscribir-empresa-boton" type="button" name="quitar_1" id="quitar_1" value="Quitar">
                 </div>
-                <div class="fila">
-                    <input type="text" name="nombre_2" id="nombre_2" placeholder="Nombre "required>
-                    <input type="text" name="apellido_2" id="apellido_2" placeholder="Apellido "required>
-                    <input type="number" name="dni_2" id="dni_2" placeholder="DNI"required>
-                    <input type="email" name="email_2" id="email_2" placeholder="Correo electronico" required>
-                    <input type="number" name="telefono_2" id="telefono_2" placeholder="Telefono" required>
-                    <input class="inscribir-empresa-boton" type="button" name="quitar_2" id="quitar_2" value="Quitar">
-                </div>
-                <div class="fila">
-                    <input type="text" name="nombre_3" id="nombre_3" placeholder="Nombre "required>
-                    <input type="text" name="apellido_3" id="apellido_3" placeholder="Apellido "required>
-                    <input type="number" name="dni_3" id="dni_3" placeholder="DNI "required>
-                    <input type="email" name="email_3" id="email_3" placeholder="Correo electronico" required>
-                    <input type="number" name="telefono_3" id="telefono_3" placeholder="Telefono" required>
-                    <input class="inscribir-empresa-boton" type="button" name="quitar_3" id="quitar_3" value="Quitar">
-                </div>
+                
             </section>
                 <div class="agregar-persona">
                     <input class="agregar-persona-boton" type="button" id="agregar" name="agregar" value="+ Agregar persona">
                 </div>
 
                 <div class="inscribir-empresa">
-                    <label for="precio">Precio:</label>
-                    <span>$ 0.00</span>
+                    <label for="precio">Precio: $</label>
+                    <span class="formulario-precioTotal">0.00</span>
                     <div>
                         <input class="enviar-formulario" type="submit" value="Inscribirse">
                     </div>

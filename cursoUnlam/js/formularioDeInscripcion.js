@@ -14,6 +14,7 @@ function agregarPersona(event){
     const inputDNI = document.createElement("input");
     const inputEmail = document.createElement("input");
     const inputTelefono = document.createElement("input");
+    const precioCurso = document.querySelector(".js-precio-del-curso");
     const botonQuitar = document.createElement("input");
     
 
@@ -37,6 +38,8 @@ function agregarPersona(event){
     inputTelefono.type="number";
     inputTelefono.setAttribute('required', true);
 
+    
+
 
     botonQuitar.className ="inscribir-empresa-boton";
     botonQuitar.type="button";
@@ -49,7 +52,7 @@ function agregarPersona(event){
     nuevaPersona.appendChild(inputEmail);
     nuevaPersona.appendChild(inputTelefono);
     nuevaPersona.appendChild(botonQuitar);
-
+    nuevaPersona.appendChild(precioCurso);
     
 
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
@@ -58,8 +61,9 @@ function agregarPersona(event){
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
     document.querySelector('.formulario-input').appendChild(nuevaPersona);
+    document.querySelector('.formulario-input').appendChild(nuevaPersona);
 
-}
+};
 
 //Eliminar fila de formulario 
 
@@ -82,28 +86,51 @@ function eliminarPersona(event){
 function getCursos() {
   const storedCursos = localStorage.getItem("cursos");
   return JSON.parse(storedCursos);
-  };
+};
 
 
 //Mostrar datos del curso al cual me quiero inscribir
-function mostrarDetallesDelCurso(){
+const url = new URL(location.href);
+const courseId = url.searchParams.get('courseId');
+console.log(courseId);
 
-  const url = new URL(location.href)
-  const nombreCurso = url.searchParams.get('nombreCurso');
-  const cursos = getCursos();
-  const curso = cursos.curso.find(curso => curso.courseName === nombreCurso);
-    if(curso){
-      const tituloDelCurso = document.querySelector('.js-titulo-del-curso');
-      const precioDelCurso = document.querySelector('.js-precio-del-curso');
-  
-      tituloDelCurso.innerHTML = `${curso.courseName}`;
-      precioDelCurso.innerHTML = `${curso.price}`;
-    }
-    else{
-      console.log("Error")
-    }
-    
+//Obtener datos guardados en localStorage
+const getListaDeCursosFromLocalStorage = () => {
+  const listaDeCursos = localStorage.getItem("listaDeCursos");
+
+  if (!listaDeCursos) return {};
+
+  return JSON.parse(listaDeCursos);
 };
 
-console.log(cursos);
+
+const listaDeCursos = getListaDeCursosFromLocalStorage();
+console.log(listaDeCursos.cursos);
+
+//Mostrar titulo del curso al cual me quiero inscribir
+const cursoBuscado = listaDeCursos.cursos.find(curso => curso.courseId.toString() === courseId);
+console.log(cursoBuscado.courseName);
+const cursoTitulo = document.querySelector('.js-titulo-del-curso');
+cursoTitulo.innerHTML = cursoBuscado.courseName;
+
+//Mostrar precio del curso
+const precioCurso = listaDeCursos.cursos.find(curso => curso.courseId.toString() === courseId);
+console.log(precioCurso.price);
+const mostrarPrecio = document.querySelector(".js-precio-del-curso");
+mostrarPrecio.innerHTML = precioCurso.price;
+
+//Actualizar precio a medida que se suma
+let precioTotal = document.querySelector('.formulario-precioTotal');
+precioTotal.innerHTML = precioCurso.price;
+console.log(precioTotal);
+  
+
+
+
+
+
+
+
+
+
 
